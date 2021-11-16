@@ -1,0 +1,1925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="4894297c-0a26-4430-bef1-e5d75f33b202" activeEnvironment="Default" name="wsdl afip" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="32eb04c0-00ec-4bb3-bbbe-8359104824d6" wsaVersion="NONE" name="ServiceSoap" type="wsdl" bindingName="{http://ar.gov.afip.dif.fexv1/}ServiceSoap" soapVersion="1_1" anonymous="optional" definition="https://wswhomo.afip.gov.ar/wsfexv1/service.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint></con:endpoints><con:operation id="ca3fe392-a0b9-4de1-845c-86fc8e528989" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXAuthorize" name="FEXAuthorize" bindingOperationName="FEXAuthorize" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="bcf1b36f-238b-4c43-a52b-0f78d760deb4" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXAuthorize>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+         <!--Optional:-->\r
+         <ar:Cmp>\r
+            <ar:Id>?</ar:Id>\r
+            <!--Optional:-->\r
+            <ar:Fecha_cbte>?</ar:Fecha_cbte>\r
+            <ar:Cbte_Tipo>?</ar:Cbte_Tipo>\r
+            <ar:Punto_vta>?</ar:Punto_vta>\r
+            <ar:Cbte_nro>?</ar:Cbte_nro>\r
+            <ar:Tipo_expo>?</ar:Tipo_expo>\r
+            <!--Optional:-->\r
+            <ar:Permiso_existente>?</ar:Permiso_existente>\r
+            <!--Optional:-->\r
+            <ar:Permisos>\r
+               <!--Zero or more repetitions:-->\r
+               <ar:Permiso>\r
+                  <!--Optional:-->\r
+                  <ar:Id_permiso>?</ar:Id_permiso>\r
+                  <ar:Dst_merc>?</ar:Dst_merc>\r
+               </ar:Permiso>\r
+               
+               </ar:Permiso>
+                  <!--Optional:-->
+                  <ar:Id_permiso>?</ar:Id_permiso>
+                  <ar:Dst_merc>?</ar:Dst_merc>
+               </ar:Permiso>
+
+            </ar:Permisos>\r
+            <ar:Dst_cmp>?</ar:Dst_cmp>\r
+            <!--Optional:-->\r
+            <ar:Cliente>?</ar:Cliente>\r
+            <ar:Cuit_pais_cliente>?</ar:Cuit_pais_cliente>\r
+            <!--Optional:-->\r
+            <ar:Domicilio_cliente>?</ar:Domicilio_cliente>\r
+            <!--Optional:-->\r
+            <ar:Id_impositivo>?</ar:Id_impositivo>\r
+            <!--Optional:-->\r
+            <ar:Moneda_Id>?</ar:Moneda_Id>\r
+            <ar:Moneda_ctz>?</ar:Moneda_ctz>\r
+            <!--Optional:-->\r
+            <ar:Obs_comerciales>?</ar:Obs_comerciales>\r
+            <ar:Imp_total>?</ar:Imp_total>\r
+            <!--Optional:-->\r
+            <ar:Obs>?</ar:Obs>\r
+            <!--Optional:-->\r
+            <ar:Cmps_asoc>\r
+               <!--Zero or more repetitions:-->\r
+               <ar:Cmp_asoc>\r
+                  <ar:Cbte_tipo>?</ar:Cbte_tipo>\r
+                  <ar:Cbte_punto_vta>?</ar:Cbte_punto_vta>\r
+                  <ar:Cbte_nro>?</ar:Cbte_nro>\r
+                  <ar:Cbte_cuit>?</ar:Cbte_cuit>\r
+               </ar:Cmp_asoc>\r
+            </ar:Cmps_asoc>\r
+            <!--Optional:-->\r
+            <ar:Forma_pago>?</ar:Forma_pago>\r
+            <!--Optional:-->\r
+            <ar:Incoterms>?</ar:Incoterms>\r
+            <!--Optional:-->\r
+            <ar:Incoterms_Ds>?</ar:Incoterms_Ds>\r
+            <ar:Idioma_cbte>?</ar:Idioma_cbte>\r
+            <!--Optional:-->\r
+            <ar:Items>\r
+               <!--Zero or more repetitions:-->\r
+               <ar:Item>\r
+                  <!--Optional:-->\r
+                  <ar:Pro_codigo>?</ar:Pro_codigo>\r
+                  <!--Optional:-->\r
+                  <ar:Pro_ds>?</ar:Pro_ds>\r
+                  <ar:Pro_qty>?</ar:Pro_qty>\r
+                  <ar:Pro_umed>?</ar:Pro_umed>\r
+                  <ar:Pro_precio_uni>?</ar:Pro_precio_uni>\r
+                  <ar:Pro_bonificacion>?</ar:Pro_bonificacion>\r
+                  <ar:Pro_total_item>?</ar:Pro_total_item>\r
+               </ar:Item>\r
+            </ar:Items>\r
+            <!--Optional:-->\r
+            <ar:Opcionales>\r
+               <!--Zero or more repetitions:-->\r
+               <ar:Opcional>\r
+                  <!--Optional:-->\r
+                  <ar:Id>?</ar:Id>\r
+                  <!--Optional:-->\r
+                  <ar:Valor>?</ar:Valor>\r
+               </ar:Opcional>\r
+            </ar:Opcionales>\r
+            <!--Optional:-->\r
+            <ar:Fecha_pago>?</ar:Fecha_pago>\r
+         </ar:Cmp>\r
+      </ar:FEXAuthorize>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXAuthorize"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="42bd4720-8692-4b38-b66d-6559e133ea4b" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXCheck_Permiso" name="FEXCheck_Permiso" bindingOperationName="FEXCheck_Permiso" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="80e31d48-f44e-4cff-a3ff-4323afd105bc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXCheck_Permiso>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+         <!--Optional:-->\r
+         <ar:ID_Permiso>?</ar:ID_Permiso>\r
+         <ar:Dst_merc>?</ar:Dst_merc>\r
+      </ar:FEXCheck_Permiso>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXCheck_Permiso"/></con:call></con:operation><con:operation id="6ab2f20f-621c-4aee-ac5c-92bfbda75874" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXDummy" name="FEXDummy" bindingOperationName="FEXDummy" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="afb7bd35-d362-4c36-92e2-5ba573ae0234" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXDummy/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXDummy"/></con:call></con:operation><con:operation id="88deadea-fe3c-4589-b2de-7ec67db0d406" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetCMP" name="FEXGetCMP" bindingOperationName="FEXGetCMP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2b206f3e-48c2-4a47-a1b6-a3ecbac05ce1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetCMP>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+         <!--Optional:-->\r
+         <ar:Cmp>\r
+            <ar:Cbte_tipo>?</ar:Cbte_tipo>\r
+            <ar:Punto_vta>?</ar:Punto_vta>\r
+            <ar:Cbte_nro>?</ar:Cbte_nro>\r
+         </ar:Cmp>\r
+      </ar:FEXGetCMP>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetCMP"/></con:call></con:operation><con:operation id="6944c823-ea8a-4f9f-98f2-efab281a9439" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetLast_CMP" name="FEXGetLast_CMP" bindingOperationName="FEXGetLast_CMP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="70a336fe-11fa-4358-b157-8f287e18c86c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetLast_CMP>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+            <ar:Pto_venta>?</ar:Pto_venta>\r
+            <ar:Cbte_Tipo>?</ar:Cbte_Tipo>\r
+         </ar:Auth>\r
+      </ar:FEXGetLast_CMP>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetLast_CMP"/></con:call></con:operation><con:operation id="a7e66776-d23a-4fd1-8f8b-b93574686a2f" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetLast_ID" name="FEXGetLast_ID" bindingOperationName="FEXGetLast_ID" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="04336c69-2a9b-4521-ba45-5f4c690e6a6c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetLast_ID>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetLast_ID>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetLast_ID"/></con:call></con:operation><con:operation id="4da600d3-1691-4d26-86d4-8ba36f000c50" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Cbte_Tipo" name="FEXGetPARAM_Cbte_Tipo" bindingOperationName="FEXGetPARAM_Cbte_Tipo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="95d0f9a5-a343-40c7-a708-b727cb5daf21" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_Cbte_Tipo>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_Cbte_Tipo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Cbte_Tipo"/></con:call></con:operation><con:operation id="c92d688b-e802-49f1-b57c-1e850e63dc00" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Ctz" name="FEXGetPARAM_Ctz" bindingOperationName="FEXGetPARAM_Ctz" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3ed4c4aa-5e9f-43ea-8203-1bcdbfea1ed0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_Ctz>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+         <!--Optional:-->\r
+         <ar:Mon_id>?</ar:Mon_id>\r
+      </ar:FEXGetPARAM_Ctz>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Ctz"/></con:call></con:operation><con:operation id="8fc53e01-34e6-4f58-b8bf-076c09c3670e" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_DST_CUIT" name="FEXGetPARAM_DST_CUIT" bindingOperationName="FEXGetPARAM_DST_CUIT" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a891995d-624a-4d12-9637-8e7fa1a22d8d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_DST_CUIT>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_DST_CUIT>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_DST_CUIT"/></con:call></con:operation><con:operation id="e3c0f674-10db-4fd9-88c5-ad988dce4d9e" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_DST_pais" name="FEXGetPARAM_DST_pais" bindingOperationName="FEXGetPARAM_DST_pais" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="82339430-cb7f-4622-bf43-62d519c3596a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_DST_pais>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_DST_pais>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_DST_pais"/></con:call></con:operation><con:operation id="730257dd-d37f-4ecd-9a9b-ea9ae05b0e7b" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Idiomas" name="FEXGetPARAM_Idiomas" bindingOperationName="FEXGetPARAM_Idiomas" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d7c9ccad-85eb-4465-a29b-a80e833fdcce" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_Idiomas>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_Idiomas>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Idiomas"/></con:call></con:operation><con:operation id="5780de4c-6267-49d0-a2e8-0e6877c3beef" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Incoterms" name="FEXGetPARAM_Incoterms" bindingOperationName="FEXGetPARAM_Incoterms" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2bdde486-a200-48f4-8cd5-e4c794124cf5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_Incoterms>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_Incoterms>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Incoterms"/></con:call></con:operation><con:operation id="14ad7f50-c02b-4dee-b553-fc752ced9a53" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_MON" name="FEXGetPARAM_MON" bindingOperationName="FEXGetPARAM_MON" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fb111812-b966-4ffd-928b-ac8ca96b50e7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_MON>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_MON>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_MON"/></con:call></con:operation><con:operation id="3b22d812-ea72-454f-a8ae-936ab4fc88b7" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_MON_CON_COTIZACION" name="FEXGetPARAM_MON_CON_COTIZACION" bindingOperationName="FEXGetPARAM_MON_CON_COTIZACION" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="494b75f4-7559-4db3-a0df-81fcaf1ee9da" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_MON_CON_COTIZACION>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+         <!--Optional:-->\r
+         <ar:Fecha_CTZ>?</ar:Fecha_CTZ>\r
+      </ar:FEXGetPARAM_MON_CON_COTIZACION>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_MON_CON_COTIZACION"/></con:call></con:operation><con:operation id="df6ec30a-fac9-46b2-ba9d-41a30e18a2e0" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Opcionales" name="FEXGetPARAM_Opcionales" bindingOperationName="FEXGetPARAM_Opcionales" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4e34761b-5dee-44d4-a80d-07cab84fe1b5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_Opcionales>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_Opcionales>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Opcionales"/></con:call></con:operation><con:operation id="0fe688da-a533-49ec-909a-aae2295d0c8d" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_PtoVenta" name="FEXGetPARAM_PtoVenta" bindingOperationName="FEXGetPARAM_PtoVenta" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0bde540d-6b19-4e28-ad86-f844c94f8e65" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_PtoVenta>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_PtoVenta>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_PtoVenta"/></con:call></con:operation><con:operation id="f99e1502-d240-4d29-93e9-85bf2a438003" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Tipo_Expo" name="FEXGetPARAM_Tipo_Expo" bindingOperationName="FEXGetPARAM_Tipo_Expo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1c83f66b-89bf-4723-926f-801807fed4cf" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_Tipo_Expo>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_Tipo_Expo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Tipo_Expo"/></con:call></con:operation><con:operation id="45f9ecd8-feed-41c5-ac47-2fef9b5631a4" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_UMed" name="FEXGetPARAM_UMed" bindingOperationName="FEXGetPARAM_UMed" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4ec23353-28da-45b5-b86b-7725a43999ec" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ar:FEXGetPARAM_UMed>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_UMed>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_UMed"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="eddbe93a-31fb-40c0-96cb-2f4ba4458aa8" wsaVersion="NONE" name="ServiceSoap12" type="wsdl" bindingName="{http://ar.gov.afip.dif.fexv1/}ServiceSoap12" soapVersion="1_2" anonymous="optional" definition="https://wswhomo.afip.gov.ar/wsfexv1/service.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://wswhomo.afip.gov.ar/wsfexv1/service.asmx?WSDL"><con:part><con:url>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://ar.gov.afip.dif.fexv1/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ar.gov.afip.dif.fexv1/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>Web Service orientado  al  servicio  de autorizacion de comprobantes de Exportacion electronicos</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ar.gov.afip.dif.fexv1/">
+      <s:element name="FEXAuthorize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Cmp" type="tns:ClsFEXRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClsFEXAuthRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Sign" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cuit" type="s:long"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:long"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Fecha_cbte" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_Tipo" type="s:short"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Punto_vta" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_nro" type="s:long"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Tipo_expo" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Permiso_existente" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Permisos" type="tns:ArrayOfPermiso"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Dst_cmp" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Cliente" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cuit_pais_cliente" type="s:long"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Domicilio_cliente" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Id_impositivo" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Moneda_Id" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Moneda_ctz" type="s:decimal"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Obs_comerciales" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_total" type="s:decimal"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Obs" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Cmps_asoc" type="tns:ArrayOfCmp_asoc"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Forma_pago" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Incoterms" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Incoterms_Ds" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Idioma_cbte" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfItem"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Opcionales" type="tns:ArrayOfOpcional"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Fecha_pago" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPermiso">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Permiso" nillable="true" type="tns:Permiso"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Permiso">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id_permiso" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Dst_merc" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCmp_asoc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cmp_asoc" nillable="true" type="tns:Cmp_asoc"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Cmp_asoc">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_tipo" type="s:short"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_punto_vta" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_nro" type="s:long"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_cuit" type="s:long"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Item" nillable="true" type="tns:Item"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Item">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Pro_codigo" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Pro_ds" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Pro_qty" type="s:decimal"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Pro_umed" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Pro_precio_uni" type="s:decimal"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Pro_bonificacion" type="s:decimal"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Pro_total_item" type="s:decimal"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOpcional">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Opcional" nillable="true" type="tns:Opcional"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Opcional">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Valor" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXAuthorizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXAuthorizeResult" type="tns:FEXResponseAuthorize"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponseAuthorize">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultAuth" type="tns:ClsFEXOutAuthorize"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXOutAuthorize">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:long"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cuit" type="s:long"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_tipo" type="s:short"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Punto_vta" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_nro" type="s:long"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Cae" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Fch_venc_Cae" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Fch_cbte" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Resultado" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Reproceso" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Motivos_Obs" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXErr">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ErrCode" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ErrMsg" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXEvents">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="EventCode" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="EventMsg" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetCMP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Cmp" type="tns:ClsFEXGetCMP"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClsFEXGetCMP">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_tipo" type="s:short"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Punto_vta" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_nro" type="s:long"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetCMPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetCMPResult" type="tns:FEXGetCMPResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXGetCMPResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ClsFEXGetCMPR"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXGetCMPR">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:long"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Fecha_cbte" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_tipo" type="s:short"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Punto_vta" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_nro" type="s:long"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Tipo_expo" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Permiso_existente" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Permisos" type="tns:ArrayOfPermiso"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Dst_cmp" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Cliente" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cuit_pais_cliente" type="s:long"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Domicilio_cliente" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Id_impositivo" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Moneda_Id" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Moneda_ctz" type="s:decimal"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Obs_comerciales" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_total" type="s:decimal"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Obs" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Cmps_asoc" type="tns:ArrayOfCmp_asoc"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Forma_pago" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Incoterms" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Incoterms_Ds" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Idioma_cbte" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfItem"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Fecha_cbte_cae" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Fch_venc_Cae" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Cae" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Resultado" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Motivos_Obs" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Opcionales" type="tns:ArrayOfOpcional"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Fecha_pago" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_Cbte_Tipo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_Cbte_TipoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_Cbte_TipoResult" type="tns:FEXResponse_Cbte_Tipo"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_Cbte_Tipo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ArrayOfClsFEXResponse_Cbte_Tipo"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsFEXResponse_Cbte_Tipo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsFEXResponse_Cbte_Tipo" nillable="true" type="tns:ClsFEXResponse_Cbte_Tipo"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_Cbte_Tipo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_Id" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Cbte_Ds" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Cbte_vig_desde" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Cbte_vig_hasta" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_Tipo_Expo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_Tipo_ExpoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_Tipo_ExpoResult" type="tns:FEXResponse_Tex"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_Tex">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ArrayOfClsFEXResponse_Tex"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsFEXResponse_Tex">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsFEXResponse_Tex" nillable="true" type="tns:ClsFEXResponse_Tex"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_Tex">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Tex_Id" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Tex_Ds" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Tex_vig_desde" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Tex_vig_hasta" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_Incoterms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_IncotermsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_IncotermsResult" type="tns:FEXResponse_Inc"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_Inc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ArrayOfClsFEXResponse_Inc"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsFEXResponse_Inc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsFEXResponse_Inc" nillable="true" type="tns:ClsFEXResponse_Inc"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_Inc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Inc_Id" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Inc_Ds" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Inc_vig_desde" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Inc_vig_hasta" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_Idiomas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_IdiomasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_IdiomasResult" type="tns:FEXResponse_Idi"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_Idi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ArrayOfClsFEXResponse_Idi"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsFEXResponse_Idi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsFEXResponse_Idi" nillable="true" type="tns:ClsFEXResponse_Idi"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_Idi">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Idi_Id" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Idi_Ds" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Idi_vig_desde" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Idi_vig_hasta" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_UMed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_UMedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_UMedResult" type="tns:FEXResponse_Umed"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_Umed">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ArrayOfClsFEXResponse_UMed"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsFEXResponse_UMed">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsFEXResponse_UMed" nillable="true" type="tns:ClsFEXResponse_UMed"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_UMed">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Umed_Id" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Umed_Ds" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Umed_vig_desde" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Umed_vig_hasta" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_DST_pais">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_DST_paisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_DST_paisResult" type="tns:FEXResponse_DST_pais"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_DST_pais">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ArrayOfClsFEXResponse_DST_pais"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsFEXResponse_DST_pais">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsFEXResponse_DST_pais" nillable="true" type="tns:ClsFEXResponse_DST_pais"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_DST_pais">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DST_Codigo" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="DST_Ds" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_DST_CUIT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_DST_CUITResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_DST_CUITResult" type="tns:FEXResponse_DST_cuit"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_DST_cuit">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ArrayOfClsFEXResponse_DST_cuit"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsFEXResponse_DST_cuit">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsFEXResponse_DST_cuit" nillable="true" type="tns:ClsFEXResponse_DST_cuit"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_DST_cuit">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DST_CUIT" type="s:long"/>
+          <s:element minOccurs="0" maxOccurs="1" name="DST_Ds" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_MON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_MONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_MONResult" type="tns:FEXResponse_Mon"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_Mon">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ArrayOfClsFEXResponse_Mon"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsFEXResponse_Mon">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsFEXResponse_Mon" nillable="true" type="tns:ClsFEXResponse_Mon"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_Mon">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_Id" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_Ds" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_vig_desde" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_vig_hasta" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_MON_CON_COTIZACION">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Fecha_CTZ" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_MON_CON_COTIZACIONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_MON_CON_COTIZACIONResult" type="tns:FEXResponse_Mon_CON_COTIZACION"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_Mon_CON_COTIZACION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ArrayOfClsFEXResponse_Mon_CON_Cotizacion"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsFEXResponse_Mon_CON_Cotizacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsFEXResponse_Mon_CON_Cotizacion" nillable="true" type="tns:ClsFEXResponse_Mon_CON_Cotizacion"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_Mon_CON_Cotizacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_Id" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_Ds" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_ctz" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Fecha_ctz" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetLast_CMP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEX_LastCMP"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClsFEX_LastCMP">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Sign" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cuit" type="s:long"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Pto_venta" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_Tipo" type="s:short"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetLast_CMPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetLast_CMPResult" type="tns:FEXResponseLast_CMP"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponseLast_CMP">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResult_LastCMP" type="tns:ClsFEX_LastCMP_Response"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEX_LastCMP_Response">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_nro" type="s:long"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Cbte_fecha" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXDummy">
+        <s:complexType/>
+      </s:element>
+      <s:element name="FEXDummyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXDummyResult" type="tns:DummyResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DummyResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AppServer" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="DbServer" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="AuthServer" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_Ctz">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Mon_id" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_CtzResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_CtzResult" type="tns:FEXResponse_Ctz"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_Ctz">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ClsFEXResponse_Ctz"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_Ctz">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Mon_ctz" type="s:decimal"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_fecha" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetLast_ID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetLast_IDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetLast_IDResult" type="tns:FEXResponse_LastID"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_LastID">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ClsFEXResponse_LastID"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_LastID">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:long"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_PtoVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_PtoVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_PtoVentaResult" type="tns:FEXResponse_PtoVenta"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_PtoVenta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ArrayOfClsFEXResponse_PtoVenta"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsFEXResponse_PtoVenta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsFEXResponse_PtoVenta" nillable="true" type="tns:ClsFEXResponse_PtoVenta"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_PtoVenta">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Pve_Nro" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Pve_Bloqueado" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Pve_FchBaja" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXCheck_Permiso">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ID_Permiso" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Dst_merc" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXCheck_PermisoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXCheck_PermisoResult" type="tns:FEXResponse_CheckPermiso"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_CheckPermiso">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ClsFEXResponse_CheckPermiso"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_CheckPermiso">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FEXGetPARAM_Opcionales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsFEXAuthRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FEXGetPARAM_OpcionalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FEXGetPARAM_OpcionalesResult" type="tns:FEXResponse_Opc"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FEXResponse_Opc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXResultGet" type="tns:ArrayOfClsFEXResponse_Opc"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXErr" type="tns:ClsFEXErr"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FEXEvents" type="tns:ClsFEXEvents"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsFEXResponse_Opc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsFEXResponse_Opc" nillable="true" type="tns:ClsFEXResponse_Opc"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsFEXResponse_Opc">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Opc_Id" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Opc_Ds" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Opc_vig_desde" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Opc_vig_hasta" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="FEXAuthorizeSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXAuthorize"/>
+  </wsdl:message>
+  <wsdl:message name="FEXAuthorizeSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXAuthorizeResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetCMPSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetCMP"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetCMPSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetCMPResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_Cbte_TipoSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_Cbte_Tipo"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_Cbte_TipoSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_Cbte_TipoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_Tipo_ExpoSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_Tipo_Expo"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_Tipo_ExpoSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_Tipo_ExpoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_IncotermsSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_Incoterms"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_IncotermsSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_IncotermsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_IdiomasSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_Idiomas"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_IdiomasSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_IdiomasResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_UMedSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_UMed"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_UMedSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_UMedResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_DST_paisSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_DST_pais"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_DST_paisSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_DST_paisResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_DST_CUITSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_DST_CUIT"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_DST_CUITSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_DST_CUITResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_MONSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_MON"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_MONSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_MONResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_MON_CON_COTIZACIONSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_MON_CON_COTIZACION"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_MON_CON_COTIZACIONSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_MON_CON_COTIZACIONResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetLast_CMPSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetLast_CMP"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetLast_CMPSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetLast_CMPResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXDummySoapIn">
+    <wsdl:part name="parameters" element="tns:FEXDummy"/>
+  </wsdl:message>
+  <wsdl:message name="FEXDummySoapOut">
+    <wsdl:part name="parameters" element="tns:FEXDummyResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_CtzSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_Ctz"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_CtzSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_CtzResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetLast_IDSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetLast_ID"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetLast_IDSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetLast_IDResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_PtoVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_PtoVenta"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_PtoVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_PtoVentaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXCheck_PermisoSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXCheck_Permiso"/>
+  </wsdl:message>
+  <wsdl:message name="FEXCheck_PermisoSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXCheck_PermisoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_OpcionalesSoapIn">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_Opcionales"/>
+  </wsdl:message>
+  <wsdl:message name="FEXGetPARAM_OpcionalesSoapOut">
+    <wsdl:part name="parameters" element="tns:FEXGetPARAM_OpcionalesResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="FEXAuthorize">
+      <wsdl:documentation>Autoriza un comprobante, devolviendo  su CAE correspondiente</wsdl:documentation>
+      <wsdl:input message="tns:FEXAuthorizeSoapIn"/>
+      <wsdl:output message="tns:FEXAuthorizeSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetCMP">
+      <wsdl:documentation>Recupera los datos completos de un comprobante ya autorizado</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetCMPSoapIn"/>
+      <wsdl:output message="tns:FEXGetCMPSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Cbte_Tipo">
+      <wsdl:documentation>Recupera el listado de los tipos de comprobante  y su codigo utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_Cbte_TipoSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_Cbte_TipoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Tipo_Expo">
+      <wsdl:documentation>Recupera el listado de los tipos de exportacion  y sus codigo utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_Tipo_ExpoSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_Tipo_ExpoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Incoterms">
+      <wsdl:documentation>Recupera el listado Incoterms  utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_IncotermsSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_IncotermsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Idiomas">
+      <wsdl:documentation>Recupera el listado de los idiomas  y sus codigos utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_IdiomasSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_IdiomasSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_UMed">
+      <wsdl:documentation>Recupera el listado de las unidades de medida  y su codigo utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_UMedSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_UMedSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_DST_pais">
+      <wsdl:documentation>Recupera el listado de paises</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_DST_paisSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_DST_paisSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_DST_CUIT">
+      <wsdl:documentation>Recupera el listado de las cuits de los paises de destinacion</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_DST_CUITSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_DST_CUITSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_MON">
+      <wsdl:documentation>Recupera el listado  de monedas y su codigo utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_MONSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_MONSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_MON_CON_COTIZACION">
+      <wsdl:documentation>Recupera el listado  de monedas que tengan cotizacion de ADUANA a una fecha determinada, utilizables en el proceso de autorizacion de comprobantes de servicios</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_MON_CON_COTIZACIONSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_MON_CON_COTIZACIONSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetLast_CMP">
+      <wsdl:documentation>Recupera el ultimos comprobante autorizado</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetLast_CMPSoapIn"/>
+      <wsdl:output message="tns:FEXGetLast_CMPSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXDummy">
+      <wsdl:documentation>Metodo dummy para verificacion de funcionamiento</wsdl:documentation>
+      <wsdl:input message="tns:FEXDummySoapIn"/>
+      <wsdl:output message="tns:FEXDummySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Ctz">
+      <wsdl:documentation>Recupera la cotizacion de la moneda consultada y su  fecha</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_CtzSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_CtzSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetLast_ID">
+      <wsdl:documentation>Recupera el ultimo ID y su  fecha</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetLast_IDSoapIn"/>
+      <wsdl:output message="tns:FEXGetLast_IDSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_PtoVenta">
+      <wsdl:documentation>Recupera el listado de los puntos de venta registrados para Factura electronica de exportacion - WS y su estado</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_PtoVentaSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_PtoVentaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXCheck_Permiso">
+      <wsdl:documentation>Verifica la  existencia de la permiso/pais de destinación  de embarque ingresado</wsdl:documentation>
+      <wsdl:input message="tns:FEXCheck_PermisoSoapIn"/>
+      <wsdl:output message="tns:FEXCheck_PermisoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Opcionales">
+      <wsdl:documentation>Recupera el listado de identificadores para los campos Opcionales</wsdl:documentation>
+      <wsdl:input message="tns:FEXGetPARAM_OpcionalesSoapIn"/>
+      <wsdl:output message="tns:FEXGetPARAM_OpcionalesSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="FEXAuthorize">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXAuthorize" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetCMP">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetCMP" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Cbte_Tipo">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Cbte_Tipo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Tipo_Expo">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Tipo_Expo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Incoterms">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Incoterms" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Idiomas">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Idiomas" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_UMed">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_UMed" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_DST_pais">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_DST_pais" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_DST_CUIT">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_DST_CUIT" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_MON">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_MON" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_MON_CON_COTIZACION">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_MON_CON_COTIZACION" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetLast_CMP">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetLast_CMP" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXDummy">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXDummy" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Ctz">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Ctz" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetLast_ID">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetLast_ID" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_PtoVenta">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_PtoVenta" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXCheck_Permiso">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXCheck_Permiso" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Opcionales">
+      <soap:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Opcionales" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="FEXAuthorize">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXAuthorize" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetCMP">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetCMP" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Cbte_Tipo">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Cbte_Tipo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Tipo_Expo">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Tipo_Expo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Incoterms">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Incoterms" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Idiomas">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Idiomas" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_UMed">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_UMed" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_DST_pais">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_DST_pais" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_DST_CUIT">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_DST_CUIT" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_MON">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_MON" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_MON_CON_COTIZACION">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_MON_CON_COTIZACION" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetLast_CMP">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetLast_CMP" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXDummy">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXDummy" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Ctz">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Ctz" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetLast_ID">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetLast_ID" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_PtoVenta">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_PtoVenta" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXCheck_Permiso">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXCheck_Permiso" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FEXGetPARAM_Opcionales">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Opcionales" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:documentation>Web Service orientado  al  servicio  de autorizacion de comprobantes de Exportacion electronicos</wsdl:documentation>
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="https://wswhomo.afip.gov.ar/wsfexv1/service.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="https://wswhomo.afip.gov.ar/wsfexv1/service.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint></con:endpoints><con:operation id="1a122686-f57d-4199-b810-72f2c28800ea" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXAuthorize" name="FEXAuthorize" bindingOperationName="FEXAuthorize" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ed84f0bb-2093-4fd0-8631-6747faeaef72" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXAuthorize>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+         <!--Optional:-->\r
+         <ar:Cmp>\r
+            <ar:Id>?</ar:Id>\r
+            <!--Optional:-->\r
+            <ar:Fecha_cbte>?</ar:Fecha_cbte>\r
+            <ar:Cbte_Tipo>?</ar:Cbte_Tipo>\r
+            <ar:Punto_vta>?</ar:Punto_vta>\r
+            <ar:Cbte_nro>?</ar:Cbte_nro>\r
+            <ar:Tipo_expo>?</ar:Tipo_expo>\r
+            <!--Optional:-->\r
+            <ar:Permiso_existente>?</ar:Permiso_existente>\r
+            <!--Optional:-->\r
+            <ar:Permisos>\r
+               <!--Zero or more repetitions:-->\r
+               <ar:Permiso>\r
+                  <!--Optional:-->\r
+                  <ar:Id_permiso>?</ar:Id_permiso>\r
+                  <ar:Dst_merc>?</ar:Dst_merc>\r
+               </ar:Permiso>\r
+            </ar:Permisos>\r
+            <ar:Dst_cmp>?</ar:Dst_cmp>\r
+            <!--Optional:-->\r
+            <ar:Cliente>?</ar:Cliente>\r
+            <ar:Cuit_pais_cliente>?</ar:Cuit_pais_cliente>\r
+            <!--Optional:-->\r
+            <ar:Domicilio_cliente>?</ar:Domicilio_cliente>\r
+            <!--Optional:-->\r
+            <ar:Id_impositivo>?</ar:Id_impositivo>\r
+            <!--Optional:-->\r
+            <ar:Moneda_Id>?</ar:Moneda_Id>\r
+            <ar:Moneda_ctz>?</ar:Moneda_ctz>\r
+            <!--Optional:-->\r
+            <ar:Obs_comerciales>?</ar:Obs_comerciales>\r
+            <ar:Imp_total>?</ar:Imp_total>\r
+            <!--Optional:-->\r
+            <ar:Obs>?</ar:Obs>\r
+            <!--Optional:-->\r
+            <ar:Cmps_asoc>\r
+               <!--Zero or more repetitions:-->\r
+               <ar:Cmp_asoc>\r
+                  <ar:Cbte_tipo>?</ar:Cbte_tipo>\r
+                  <ar:Cbte_punto_vta>?</ar:Cbte_punto_vta>\r
+                  <ar:Cbte_nro>?</ar:Cbte_nro>\r
+                  <ar:Cbte_cuit>?</ar:Cbte_cuit>\r
+               </ar:Cmp_asoc>\r
+            </ar:Cmps_asoc>\r
+            <!--Optional:-->\r
+            <ar:Forma_pago>?</ar:Forma_pago>\r
+            <!--Optional:-->\r
+            <ar:Incoterms>?</ar:Incoterms>\r
+            <!--Optional:-->\r
+            <ar:Incoterms_Ds>?</ar:Incoterms_Ds>\r
+            <ar:Idioma_cbte>?</ar:Idioma_cbte>\r
+            <!--Optional:-->\r
+            <ar:Items>\r
+               <!--Zero or more repetitions:-->\r
+               <ar:Item>\r
+                  <!--Optional:-->\r
+                  <ar:Pro_codigo>?</ar:Pro_codigo>\r
+                  <!--Optional:-->\r
+                  <ar:Pro_ds>?</ar:Pro_ds>\r
+                  <ar:Pro_qty>?</ar:Pro_qty>\r
+                  <ar:Pro_umed>?</ar:Pro_umed>\r
+                  <ar:Pro_precio_uni>?</ar:Pro_precio_uni>\r
+                  <ar:Pro_bonificacion>?</ar:Pro_bonificacion>\r
+                  <ar:Pro_total_item>?</ar:Pro_total_item>\r
+               </ar:Item>\r
+            </ar:Items>\r
+            <!--Optional:-->\r
+            <ar:Opcionales>\r
+               <!--Zero or more repetitions:-->\r
+               <ar:Opcional>\r
+                  <!--Optional:-->\r
+                  <ar:Id>?</ar:Id>\r
+                  <!--Optional:-->\r
+                  <ar:Valor>?</ar:Valor>\r
+               </ar:Opcional>\r
+            </ar:Opcionales>\r
+            <!--Optional:-->\r
+            <ar:Fecha_pago>?</ar:Fecha_pago>\r
+         </ar:Cmp>\r
+      </ar:FEXAuthorize>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXAuthorizeRequest"/></con:call></con:operation><con:operation id="a2e186aa-6b44-4551-9067-eb535cc616cb" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXCheck_Permiso" name="FEXCheck_Permiso" bindingOperationName="FEXCheck_Permiso" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1e7fab87-73d2-44c0-97dc-79be87aa4a9c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXCheck_Permiso>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+         <!--Optional:-->\r
+         <ar:ID_Permiso>?</ar:ID_Permiso>\r
+         <ar:Dst_merc>?</ar:Dst_merc>\r
+      </ar:FEXCheck_Permiso>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXCheck_PermisoRequest"/></con:call></con:operation><con:operation id="137ad594-ec56-40a1-8e4e-47cea9dde4f0" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXDummy" name="FEXDummy" bindingOperationName="FEXDummy" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3003a202-f289-4a6a-ba54-7fc308f7fc40" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXDummy/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXDummyRequest"/></con:call></con:operation><con:operation id="ccb418e6-cf67-474a-b851-01187389c526" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetCMP" name="FEXGetCMP" bindingOperationName="FEXGetCMP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="39c851d5-efdc-443f-b10a-60618beaa13a" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetCMP>\r
+         
+         <!--Optional:-->\r
+         <ar:Cmp>\r
+            <ar:Cbte_tipo>1</ar:Cbte_tipo>\r
+            <ar:Punto_vta>1</ar:Punto_vta>\r
+            <ar:Cbte_nro>1</ar:Cbte_nro>\r
+         </ar:Cmp>\r
+      </ar:FEXGetCMP>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetCMPRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="44712c73-76b9-429f-828b-418e45fb60e8" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetLast_CMP" name="FEXGetLast_CMP" bindingOperationName="FEXGetLast_CMP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3d0536ab-4060-4a57-890f-dd046a17944a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetLast_CMP>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+            <ar:Pto_venta>?</ar:Pto_venta>\r
+            <ar:Cbte_Tipo>?</ar:Cbte_Tipo>\r
+         </ar:Auth>\r
+      </ar:FEXGetLast_CMP>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetLast_CMPRequest"/></con:call></con:operation><con:operation id="9676f888-4543-48db-9ff5-ebe97b4e57d1" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetLast_ID" name="FEXGetLast_ID" bindingOperationName="FEXGetLast_ID" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0e3a0179-f445-4e8c-9cab-e51ffbb5955e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetLast_ID>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetLast_ID>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetLast_IDRequest"/></con:call></con:operation><con:operation id="c753793c-45b3-490b-b9a9-7f3572e0047f" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Cbte_Tipo" name="FEXGetPARAM_Cbte_Tipo" bindingOperationName="FEXGetPARAM_Cbte_Tipo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f93a5bbf-ae7e-4b3f-afa7-b3b0c35fb57f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_Cbte_Tipo>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_Cbte_Tipo>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_Cbte_TipoRequest"/></con:call></con:operation><con:operation id="a27c4262-ed8d-456b-85c1-5bfd210f477c" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Ctz" name="FEXGetPARAM_Ctz" bindingOperationName="FEXGetPARAM_Ctz" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="66ff5662-1b5e-4155-b554-15545b8d1173" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_Ctz>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+         <!--Optional:-->\r
+         <ar:Mon_id>?</ar:Mon_id>\r
+      </ar:FEXGetPARAM_Ctz>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_CtzRequest"/></con:call></con:operation><con:operation id="a99e26d0-413f-49a7-8c91-e251b08849c5" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_DST_CUIT" name="FEXGetPARAM_DST_CUIT" bindingOperationName="FEXGetPARAM_DST_CUIT" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="aaf116e3-ec65-4de2-b30b-e442b0ca67ca" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_DST_CUIT>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_DST_CUIT>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_DST_CUITRequest"/></con:call></con:operation><con:operation id="cbac8711-8e03-436b-94a8-33061981b279" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_DST_pais" name="FEXGetPARAM_DST_pais" bindingOperationName="FEXGetPARAM_DST_pais" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5c6a5703-935f-4d6f-820f-f2f1567d779c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_DST_pais>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_DST_pais>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_DST_paisRequest"/></con:call></con:operation><con:operation id="05bccecf-6e7b-4db6-aacc-f507537f7f78" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Idiomas" name="FEXGetPARAM_Idiomas" bindingOperationName="FEXGetPARAM_Idiomas" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="16c9f901-f4dc-4d5a-b546-872463404fc0" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_Idiomas>\r
+         <!--Optional:-->\r
+         
+      </ar:FEXGetPARAM_Idiomas>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_IdiomasRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="ddcda519-afca-4125-9db1-276eb7cdbcb8" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Incoterms" name="FEXGetPARAM_Incoterms" bindingOperationName="FEXGetPARAM_Incoterms" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4dab7574-c646-496b-97b8-244d0e5e5141" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_Incoterms>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_Incoterms>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_IncotermsRequest"/></con:call></con:operation><con:operation id="3c79d75b-59be-4a82-a04a-6e2719ae42e0" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_MON" name="FEXGetPARAM_MON" bindingOperationName="FEXGetPARAM_MON" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b86a0e3a-8f73-4129-8e7c-496eaba72267" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_MON>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_MON>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_MONRequest"/></con:call></con:operation><con:operation id="bfc74788-4cc3-4021-8cab-b2407df568ba" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_MON_CON_COTIZACION" name="FEXGetPARAM_MON_CON_COTIZACION" bindingOperationName="FEXGetPARAM_MON_CON_COTIZACION" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9cb62744-d48a-47e4-91e0-afdfc9dfeeda" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_MON_CON_COTIZACION>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+         <!--Optional:-->\r
+         <ar:Fecha_CTZ>?</ar:Fecha_CTZ>\r
+      </ar:FEXGetPARAM_MON_CON_COTIZACION>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_MON_CON_COTIZACIONRequest"/></con:call></con:operation><con:operation id="ec099d8f-7422-4d29-9a70-d4f3f8d65384" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Opcionales" name="FEXGetPARAM_Opcionales" bindingOperationName="FEXGetPARAM_Opcionales" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="14500e69-8d52-4453-8030-b60e7040ec63" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_Opcionales>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_Opcionales>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_OpcionalesRequest"/></con:call></con:operation><con:operation id="c29b86ec-7568-4c6c-b56c-670f2710915d" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_PtoVenta" name="FEXGetPARAM_PtoVenta" bindingOperationName="FEXGetPARAM_PtoVenta" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="96e74ee9-7c70-40c3-960f-02cfef917d98" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_PtoVenta>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_PtoVenta>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_PtoVentaRequest"/></con:call></con:operation><con:operation id="6fefe11c-0cfd-4ddf-afb1-610fc1b4e654" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_Tipo_Expo" name="FEXGetPARAM_Tipo_Expo" bindingOperationName="FEXGetPARAM_Tipo_Expo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="69416b24-238a-4d4f-8d51-51a0c182d72e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_Tipo_Expo>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_Tipo_Expo>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_Tipo_ExpoRequest"/></con:call></con:operation><con:operation id="eb84b6ce-9d5b-418b-a547-c8f6e856fdce" isOneWay="false" action="http://ar.gov.afip.dif.fexv1/FEXGetPARAM_UMed" name="FEXGetPARAM_UMed" bindingOperationName="FEXGetPARAM_UMed" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="845227ff-6495-4dac-9538-be0228925573" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ar="http://ar.gov.afip.dif.fexv1/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ar:FEXGetPARAM_UMed>\r
+         <!--Optional:-->\r
+         <ar:Auth>\r
+            <!--Optional:-->\r
+            <ar:Token>?</ar:Token>\r
+            <!--Optional:-->\r
+            <ar:Sign>?</ar:Sign>\r
+            <ar:Cuit>?</ar:Cuit>\r
+         </ar:Auth>\r
+      </ar:FEXGetPARAM_UMed>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ar.gov.afip.dif.fexv1/ServiceSoap/FEXGetPARAM_UMedRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
