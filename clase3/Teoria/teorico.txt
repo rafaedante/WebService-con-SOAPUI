@@ -1,0 +1,38 @@
+
+TIPOS DE WEB SERVICES
+	- SOAP
+	- REST
+
+
+TIPO SOAP
+	- PROTOCOLO SOAP (Protocolo de Acceso a Objeto Simple)
+	- WSDL (Lenguaje de descripcion de web service)
+	- XML (Lenguaje marcado Extensible) 
+
+
+TIPO REST
+
+	- PROTOCOLO HTTP (Protocolo de transferencia hipertexto)
+	- JSON (java script object notation)
+	- XML 
+	- URI (identificador uniforme de recurso)
+
+	- Operaciones HTTP
+		- POST (crear un recurso)
+		- GET (consultar un recurso)
+		- PUT (actualizar un recurso)
+		- DELETE (borrar un recurso)
+
+		- CRUD (Crear, leer, actualizar, borrar)
+
+	- OTRAS Operaciones HTTP
+		- HEAD
+		- CONNECT
+		- OPTIONS
+		- TRACE
+		- PATCH
+
+https://jsonplaceholder.typicode.com/users
+https://jsonplaceholder.typicode.com/posts
+
+metodo: GET
